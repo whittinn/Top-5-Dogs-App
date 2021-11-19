@@ -13,19 +13,14 @@ class FrenchBulldogTableViewCell: UITableViewCell {
     
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var imageData: UIImageView!
-    
     @IBOutlet weak var noButton: UIButton!
-    
     @IBOutlet weak var yesButton: UIButton!
-    
-    
-    
     
     func showLikedText(_ text : String){
         self.ratingLabel?.text = text
         
     }
-    
+
     func showDislikedText(_ text : String){
         self.ratingLabel?.text = text
     }

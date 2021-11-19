@@ -35,8 +35,6 @@ class BeagleTableViewCell: UITableViewCell {
     func showDislikeText(_ text: String){
         self.ratingLabel?.text = text
     }
-    
-    
    
     func downloadPictureFromURL(from url: String){
         

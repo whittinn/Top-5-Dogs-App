@@ -35,8 +35,7 @@ class BeagleViewController: UIViewController{
             
             }
         }
-        
-        
+    
       title = "Beagle"
     }
     

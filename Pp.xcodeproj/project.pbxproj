@@ -21,6 +21,7 @@
 		8C2A690E27471E610021291F /* LabradorTableExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A690D27471E610021291F /* LabradorTableExt.swift */; };
 		8C2A691427471E7A0021291F /* LabradorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A691327471E7A0021291F /* LabradorViewController.swift */; };
 		8C2A691C27471E9E0021291F /* LabradorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A691B27471E9E0021291F /* LabradorTableViewCell.swift */; };
+		8C2A692127472E640021291F /* GoldenRetrieverTableExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A692027472E640021291F /* GoldenRetrieverTableExt.swift */; };
 		8CA838E42743148500C5D473 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA838E32743148500C5D473 /* InfoViewController.swift */; };
 		8CA838F527435B3A00C5D473 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA838F427435B3A00C5D473 /* MainMenuViewController.swift */; };
 		8CA8390C2744C3E600C5D473 /* HighlightedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA8390B2744C3E600C5D473 /* HighlightedButton.swift */; };
@@ -76,6 +77,7 @@
 		8C2A690D27471E610021291F /* LabradorTableExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabradorTableExt.swift; sourceTree = "<group>"; };
 		8C2A691327471E7A0021291F /* LabradorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabradorViewController.swift; sourceTree = "<group>"; };
 		8C2A691B27471E9E0021291F /* LabradorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabradorTableViewCell.swift; sourceTree = "<group>"; };
+		8C2A692027472E640021291F /* GoldenRetrieverTableExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldenRetrieverTableExt.swift; sourceTree = "<group>"; };
 		8CA838E32743148500C5D473 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		8CA838F427435B3A00C5D473 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		8CA8390B2744C3E600C5D473 /* HighlightedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightedButton.swift; sourceTree = "<group>"; };
@@ -143,9 +145,8 @@
 			children = (
 				8CA838F427435B3A00C5D473 /* MainMenuViewController.swift */,
 				8CF6991F2735C7E3001187B0 /* firstTableViewCell.swift */,
-				8CA839162744C54200C5D473 /* NoViewController.swift */,
 				8CF699172735C424001187B0 /* GoldenRetrieverViewController.swift */,
-				8CF6992427360836001187B0 /* YesViewController.swift */,
+				8C2A692027472E640021291F /* GoldenRetrieverTableExt.swift */,
 				8CA8390B2744C3E600C5D473 /* HighlightedButton.swift */,
 				8CA838E32743148500C5D473 /* InfoViewController.swift */,
 			);
@@ -199,6 +200,8 @@
 		8CA8393C2745F77B00C5D473 /* SaveResponse */ = {
 			isa = PBXGroup;
 			children = (
+				8CA839162744C54200C5D473 /* NoViewController.swift */,
+				8CF6992427360836001187B0 /* YesViewController.swift */,
 				8CA8393D2745F7BA00C5D473 /* SaveResponseViewController.swift */,
 				8C2A68CC2746A2420021291F /* SaveNoResponseViewController.swift */,
 			);
@@ -433,6 +436,7 @@
 				8CF6990E2735A5D1001187B0 /* NetworkManager.swift in Sources */,
 				8C2A690427471DD90021291F /* GermanSViewController.swift in Sources */,
 				8CF698C32734EB69001187B0 /* AppDelegate.swift in Sources */,
+				8C2A692127472E640021291F /* GoldenRetrieverTableExt.swift in Sources */,
 				8CA8392F2744C92A00C5D473 /* FrenchInfoViewController.swift in Sources */,
 				8C2A68FA274712F00021291F /* FrenchBulldogTableExt.swift in Sources */,
 				8CA839202744C69800C5D473 /* GermanInfoViewController.swift in Sources */,

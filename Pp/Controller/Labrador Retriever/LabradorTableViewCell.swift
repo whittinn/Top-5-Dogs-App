@@ -11,14 +11,12 @@ class LabradorTableViewCell: UITableViewCell {
 
    static let id = "cell123"
     @IBOutlet weak var imageData: UIImageView!
-    
     @IBOutlet weak var ratingLabel: UILabel!
     
     
     func showLikeText(_ text : String){
         self.ratingLabel?.text = text
     }
-    
     func showDislikeText(_ text : String){
         self.ratingLabel?.text = text
     }
@@ -27,7 +25,6 @@ class LabradorTableViewCell: UITableViewCell {
     @IBAction func noButtonPressed(_ sender: Any) {
         showDislikeText("I don't like this picture.")
     }
-    
     @IBAction func yesButtonPressed(_ sender: Any) {
         showLikeText("I like this picture!")
     }
