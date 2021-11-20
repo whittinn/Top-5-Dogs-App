@@ -6,14 +6,29 @@
 //
 
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var navigationController: UINavigationController!
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+        
+        let homeVC = SignInViewController.init(nibName: "HomeVC", bundle: nil)
+
+              // Allocate navigation controller
+              self.navigationController =
+                UINavigationController(rootViewController: homeVC)
+                      return true
+
+             // Custom navigation View Assign window root view controller.
+              self.window?.rootViewController = self.navigationController
+              self.window?.makeKeyAndVisible()
+    
         return true
     }
 
