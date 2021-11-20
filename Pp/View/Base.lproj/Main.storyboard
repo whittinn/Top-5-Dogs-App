@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G9D-nt-Z1g">
-                                <rect key="frame" x="0.0" y="344" width="414" height="368"/>
+                                <rect key="frame" x="0.0" y="391" width="414" height="368"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="c5I-O7-7nA"/>
@@ -25,7 +25,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Euf-j1-zdl">
-                                <rect key="frame" x="20" y="120" width="374" height="216.5"/>
+                                <rect key="frame" x="20" y="120" width="374" height="263.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top 5 Dog Breeds App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mP4-xE-hUt">
                                         <rect key="frame" x="101" y="0.0" width="172" height="20.5"/>
@@ -58,6 +58,14 @@
                                             <action selector="signOutButtonTapped:" destination="Pzy-0B-YcB" eventType="touchUpInside" id="HCL-BA-GC3"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enZ-00-gn3">
+                                        <rect key="frame" x="138.5" y="233.5" width="97" height="30"/>
+                                        <state key="normal" title="Back To Menu"/>
+                                        <connections>
+                                            <action selector="backToButton:" destination="Pzy-0B-YcB" eventType="touchUpInside" id="s3I-Yf-5FM"/>
+                                            <segue destination="xm4-g1-Chk" kind="show" id="d5d-bu-BvW"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Wx0-Fk-cPp" firstAttribute="leading" secondItem="Euf-j1-zdl" secondAttribute="leading" constant="35" id="PpA-2J-SlR"/>
@@ -80,6 +88,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="N9E-N1-1ci"/>
                     <connections>
+                        <outlet property="backToButton" destination="enZ-00-gn3" id="rU3-Fv-fqk"/>
                         <outlet property="button" destination="4FA-j2-aGX" id="6VD-kq-uZw"/>
                         <outlet property="emailText" destination="rYC-Pk-9t9" id="ond-3d-s6N"/>
                         <outlet property="label" destination="mP4-xE-hUt" id="RPG-Id-lpl"/>
@@ -1500,7 +1509,6 @@
         <!--Navigation Controller-->
         <scene sceneID="X0w-sG-tw0">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iwC-tD-96q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iK6-ce-NqH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Who-hC-tpb">
@@ -1512,6 +1520,7 @@
                         <segue destination="Pzy-0B-YcB" kind="relationship" relationship="rootViewController" id="CD8-ze-08z"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iwC-tD-96q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-27.536231884057973" y="-130.58035714285714"/>
         </scene>
@@ -1520,6 +1529,7 @@
         <segue reference="g2D-ZO-dUJ"/>
         <segue reference="fvn-7E-sdU"/>
         <segue reference="eaF-Wm-TkF"/>
+        <segue reference="d5d-bu-BvW"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="doggy" width="58" height="58"/>

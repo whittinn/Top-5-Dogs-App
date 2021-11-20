@@ -20,7 +20,8 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var signOut: UIButton!
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var passwordText: UITextField!
-    @IBOutlet weak var lblStatus: UILabel!
+    @IBOutlet weak var backToButton: UIButton!
+    
     
     
     override func viewDidLoad() {
@@ -36,6 +37,8 @@ class SignInViewController: UIViewController {
         }
     }
 
+    @IBAction func backToButton(_ sender: Any) {
+    }
     @IBAction func loginButton(_ sender: Any) {
         
         guard let email = emailText.text, !email.isEmpty, let password = passwordText.text, !email.isEmpty else {
