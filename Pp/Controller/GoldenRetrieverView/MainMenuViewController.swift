@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class MainMenuViewController: UIViewController {
 
@@ -15,7 +16,9 @@ class MainMenuViewController: UIViewController {
        title = "Pick A Breed"
     }
     
-
+   
+   
+    
     /*
     // MARK: - Navigation
 

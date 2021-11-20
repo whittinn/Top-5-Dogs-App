@@ -17,6 +17,7 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var label: UILabel!
     
+    @IBOutlet weak var signOut: UIButton!
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var passwordText: UITextField!
     @IBOutlet weak var lblStatus: UILabel!
@@ -25,6 +26,7 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
         
         if FirebaseAuth.Auth.auth().currentUser != nil {
             self.button.isHidden = true
@@ -75,7 +77,7 @@ class SignInViewController: UIViewController {
         
     }
     
-    @IBAction func SignOutButton(_ sender: Any) {
+    @IBAction func signOutButtonTapped(_ sender: Any) {
         
         do{
             try FirebaseAuth.Auth.auth().signOut()
@@ -88,6 +90,7 @@ class SignInViewController: UIViewController {
             print("An error occurred")
         }
     }
+    
     
     func showCreationAccount(email: String, password: String) {
         let alert = UIAlertController(title: "Create Account", message: "Would you like to create account?", preferredStyle: .alert)
