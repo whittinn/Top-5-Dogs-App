@@ -8,14 +8,14 @@
 import UIKit
 
 class FrenchBulldogViewController: UIViewController {
-
+    
     var pictures : [Hit] = []
     
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-title = "French Bulldog"
+        title = "French Bulldog"
         tableView.dataSource = self
         
         NetworkMananger.shared.frenchBulldogInfo { [weak self](result) in
@@ -34,7 +34,4 @@ title = "French Bulldog"
         }
     }
     
-
-   
-
 }

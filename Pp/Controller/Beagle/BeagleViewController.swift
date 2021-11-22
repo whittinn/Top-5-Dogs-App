@@ -8,11 +8,7 @@
 import UIKit
 
 class BeagleViewController: UIViewController{
-  
     
-
-   
-
     var pictures : [Hit] = []
     @IBOutlet weak var tableView: UITableView!
     
@@ -25,20 +21,18 @@ class BeagleViewController: UIViewController{
             
             switch result{
             case .failure(let error):
-            print(error)
-            
+                print(error)
+                
             case .success(let pictures):
                 self.pictures = pictures
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
-            
+                
             }
         }
-    
-      title = "Beagle"
+        
+        title = "Beagle"
     }
     
-
-   
 }

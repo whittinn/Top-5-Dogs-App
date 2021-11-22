@@ -17,10 +17,7 @@ extension GermanSViewController : UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: GermanSTableViewCell.id, for: indexPath) as! GermanSTableViewCell
         cell.downloadPictureFromURL(from: pictures[indexPath.row].previewURL)
         return cell
-        
     
-        
     }
-    
     
 }

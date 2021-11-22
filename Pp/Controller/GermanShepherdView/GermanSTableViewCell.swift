@@ -8,8 +8,8 @@
 import UIKit
 
 class GermanSTableViewCell: UITableViewCell {
-
-   
+    
+    
     static let id = "cell123"
     @IBOutlet weak var imageData: UIImageView!
     @IBOutlet weak var ratingLabel: UILabel!

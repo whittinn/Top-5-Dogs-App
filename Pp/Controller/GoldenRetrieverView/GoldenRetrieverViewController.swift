@@ -8,9 +8,10 @@
 import UIKit
 
 class GoldenRetrieverViewController : UIViewController {
-   
+    
     
     var pictures : [Hit] = []
+    var selectedPicture: Hit?
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -21,6 +22,7 @@ class GoldenRetrieverViewController : UIViewController {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 600
         tableView.dataSource = self
+        tableView.delegate = self
         
         NetworkMananger.shared.getInfo { [weak self] (results) in
             guard let self = self else {return }
@@ -40,4 +42,12 @@ class GoldenRetrieverViewController : UIViewController {
         }
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is YesViewController {
+            let vc = segue.destination as? YesViewController
+            vc?.imageUrl = selectedPicture?.previewURL
+        }
+    }
+    
 }

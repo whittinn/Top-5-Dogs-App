@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		341074868A5C0000B30ABAE0 /* Pods_PpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8E0F2DFA1392D5156C2C75 /* Pods_PpTests.framework */; };
 		8C2A68C527461DD10021291F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A68C427461DD10021291F /* SignInViewController.swift */; };
-		8C2A68CD2746A2420021291F /* SaveNoResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A68CC2746A2420021291F /* SaveNoResponseViewController.swift */; };
 		8C2A68D52746C2BF0021291F /* BeagleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A68D42746C2BF0021291F /* BeagleViewController.swift */; };
 		8C2A68E32746E0F70021291F /* BeagleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A68E22746E0F70021291F /* BeagleTableViewCell.swift */; };
 		8C2A68E8274700F10021291F /* BeagleTableExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A68E7274700F10021291F /* BeagleTableExt.swift */; };
@@ -33,7 +32,6 @@
 		8CA839262744C84100C5D473 /* LabradorInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA839252744C84100C5D473 /* LabradorInfoViewController.swift */; };
 		8CA8392F2744C92A00C5D473 /* FrenchInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA8392E2744C92A00C5D473 /* FrenchInfoViewController.swift */; };
 		8CA839352744CA4E00C5D473 /* BeagleInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA839342744CA4E00C5D473 /* BeagleInfoViewController.swift */; };
-		8CA8393E2745F7BA00C5D473 /* SaveResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA8393D2745F7BA00C5D473 /* SaveResponseViewController.swift */; };
 		8CF698C32734EB69001187B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF698C22734EB69001187B0 /* AppDelegate.swift */; };
 		8CF698C52734EB69001187B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF698C42734EB69001187B0 /* SceneDelegate.swift */; };
 		8CF698CA2734EB69001187B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF698C82734EB69001187B0 /* Main.storyboard */; };
@@ -75,7 +73,6 @@
 		3BBA9F34F91976513007B72F /* Pods-Pp-PpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pp-PpUITests.release.xcconfig"; path = "Target Support Files/Pods-Pp-PpUITests/Pods-Pp-PpUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5601E7259F1DC9D604CED527 /* Pods-PpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PpTests.release.xcconfig"; path = "Target Support Files/Pods-PpTests/Pods-PpTests.release.xcconfig"; sourceTree = "<group>"; };
 		8C2A68C427461DD10021291F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		8C2A68CC2746A2420021291F /* SaveNoResponseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveNoResponseViewController.swift; sourceTree = "<group>"; };
 		8C2A68D42746C2BF0021291F /* BeagleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeagleViewController.swift; sourceTree = "<group>"; };
 		8C2A68E22746E0F70021291F /* BeagleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeagleTableViewCell.swift; sourceTree = "<group>"; };
 		8C2A68E7274700F10021291F /* BeagleTableExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeagleTableExt.swift; sourceTree = "<group>"; };
@@ -99,7 +96,6 @@
 		8CA839252744C84100C5D473 /* LabradorInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabradorInfoViewController.swift; sourceTree = "<group>"; };
 		8CA8392E2744C92A00C5D473 /* FrenchInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrenchInfoViewController.swift; sourceTree = "<group>"; };
 		8CA839342744CA4E00C5D473 /* BeagleInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeagleInfoViewController.swift; sourceTree = "<group>"; };
-		8CA8393D2745F7BA00C5D473 /* SaveResponseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveResponseViewController.swift; sourceTree = "<group>"; };
 		8CF698BF2734EB68001187B0 /* Pp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF698C22734EB69001187B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CF698C42734EB69001187B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -234,8 +230,6 @@
 			children = (
 				8CA839162744C54200C5D473 /* NoViewController.swift */,
 				8CF6992427360836001187B0 /* YesViewController.swift */,
-				8CA8393D2745F7BA00C5D473 /* SaveResponseViewController.swift */,
-				8C2A68CC2746A2420021291F /* SaveNoResponseViewController.swift */,
 			);
 			path = SaveResponse;
 			sourceTree = "<group>";
@@ -586,9 +580,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CA8393E2745F7BA00C5D473 /* SaveResponseViewController.swift in Sources */,
 				8C2A68F227470EAF0021291F /* FrenchBulldogTableViewCell.swift in Sources */,
-				8C2A68CD2746A2420021291F /* SaveNoResponseViewController.swift in Sources */,
 				8CF6990E2735A5D1001187B0 /* NetworkManager.swift in Sources */,
 				8C2A690427471DD90021291F /* GermanSViewController.swift in Sources */,
 				8CF698C32734EB69001187B0 /* AppDelegate.swift in Sources */,

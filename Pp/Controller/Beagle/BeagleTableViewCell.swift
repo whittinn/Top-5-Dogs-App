@@ -8,7 +8,7 @@
 import UIKit
 
 class BeagleTableViewCell: UITableViewCell {
-
+    
     
     static let id = "cell123"
     
@@ -35,7 +35,7 @@ class BeagleTableViewCell: UITableViewCell {
     func showDislikeText(_ text: String){
         self.ratingLabel?.text = text
     }
-   
+    
     func downloadPictureFromURL(from url: String){
         
         NetworkMananger.shared.downloadImage(from: url) {[weak self] (picture) in
@@ -45,5 +45,5 @@ class BeagleTableViewCell: UITableViewCell {
             }
         }
     }
-
+    
 }

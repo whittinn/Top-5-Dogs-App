@@ -64,14 +64,10 @@ public class NetworkMananger{
                 completion(.failure(error))
             }
             
-            
         }.resume()
         
-        
-        
     }
-    
-    
+        
     func beagleInfo(completion: @escaping (Result<[Hit],Error>)->Void){
         
         
@@ -99,15 +95,9 @@ public class NetworkMananger{
                 
             }
             
-            
         }.resume()
         
-        
-        
-        
-        
     }
-    
     
     func downloadLabradorInfo(completion: @escaping (Result<[Hit],Error>)-> Void){
         
@@ -138,10 +128,7 @@ public class NetworkMananger{
             }
         }.resume()
         
-        
-        
     }
-    
     
     func downloadGermanInfo(completion: @escaping (Result<[Hit],Error>)-> Void){
         
@@ -170,7 +157,6 @@ public class NetworkMananger{
             }
         }.resume()
         
-        
     }
     
     func downloadImage(from url:String, completion: @escaping (UIImage?)-> Void){
@@ -189,7 +175,6 @@ public class NetworkMananger{
             completion(image)
             
         }.resume()
-        
         
     }
     

@@ -12,17 +12,11 @@ class firstTableViewCell: UITableViewCell {
     static let id = "cell1"
     let userDefaults = UserDefaults()
     @IBOutlet weak var yesButton: UIButton!
-    
     @IBOutlet weak var noButton: UIButton!
     @IBOutlet weak var notRatedLabel: UILabel!
     @IBOutlet weak var imageData: UIImageView!
     @IBOutlet weak var pictureInfoButton: UILabel!
-    
-    
-  
-    
-    
-    
+
     func showDislikedText(_ text: String){
         self.notRatedLabel?.text = text
         
@@ -35,7 +29,7 @@ class firstTableViewCell: UITableViewCell {
     @IBAction func yesButtonTapped(_ sender: Any) {
         self.showLikedText("I like this picture!")
         
-       
+    
     }
     
     @IBAction func noButtonTapped(_ sender: Any) {
@@ -43,6 +37,7 @@ class firstTableViewCell: UITableViewCell {
         self.showDislikedText("I dont like this picture.")
         yesButton.isEnabled = true
     }
+
     
     func downloadPictureFromURL(from url: String){
         

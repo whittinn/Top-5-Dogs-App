@@ -7,19 +7,13 @@
 
 import UIKit
 
- 
-
-
-
-
-
 class YesViewController: UIViewController {
-   
+    
     
     var pictures2 : [Response]?
+    var imageUrl : String?
     
-    
-   let userDefaults = UserDefaults()
+    let userDefaults = UserDefaults()
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageData: UIImageView!
     @IBOutlet weak var responseLabel: UILabel!
@@ -36,36 +30,24 @@ class YesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-  title = "You Picked Yes"
+        title = "You Picked Yes"
         rating.isHidden = true
+        responseText.delegate = self
         if let value = userDefaults.value(forKey: "response") as? String {
             responseText.text = value
-           
+            
         }
-     
+        
     }
     
- 
-   
     @IBAction func saveButtonTapped(_ sender: Any) {
         let description = responseText.text
         userDefaults.setValue(description, forKey: "response")
     }
     
     
-    
-    
-    @objc func holdDown(_ sender : UIButton){
-        
-        if oneButton.isSelected == true{
-        oneButton.backgroundColor = UIColor.yellow
-          
-        }
-    }
-    
-    
     @IBAction func oneButtonPressed(_ sender: Any) {
- 
+        
         oneButton.backgroundColor = .yellow
         rating.text = "\(1)"
         twoButton.isEnabled = false
@@ -102,7 +84,7 @@ class YesViewController: UIViewController {
     
     @IBAction func fourButtonPressed(_ sender: Any) {
         
-       fourButton.backgroundColor = UIColor.yellow
+        fourButton.backgroundColor = UIColor.yellow
         rating.text = "\(4)"
         oneButton.isEnabled = false
         threeButton.isEnabled = false
@@ -113,7 +95,7 @@ class YesViewController: UIViewController {
     @IBAction func fiveButtonPressed(_ sender: Any) {
         
         fiveButton.backgroundColor = UIColor.yellow
-         rating.text = "\(5)"
+        rating.text = "\(5)"
         oneButton.isEnabled = false
         threeButton.isEnabled = false
         fourButton.isEnabled = false
@@ -122,6 +104,15 @@ class YesViewController: UIViewController {
         
     }
     
-    
-    
+}
+
+extension YesViewController: UITextViewDelegate {
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        
+        if text == "\n" {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
+    }
 }

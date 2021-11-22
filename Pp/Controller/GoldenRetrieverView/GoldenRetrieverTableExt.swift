@@ -22,5 +22,12 @@ extension GoldenRetrieverViewController : UITableViewDataSource{
         return cell
         
     }
-    
+}
+
+extension GoldenRetrieverViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let row = pictures[indexPath.row]
+        selectedPicture = row
+        
+    }
 }

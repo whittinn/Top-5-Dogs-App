@@ -20,6 +20,4 @@ extension LabradorViewController : UITableViewDataSource{
     }
     
     
-    
-    
 }

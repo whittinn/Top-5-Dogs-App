@@ -28,12 +28,13 @@ class SignInViewController: UIViewController {
         
         super.viewDidLoad()
         
-        
+        self.backToButton.isHidden = true
         if FirebaseAuth.Auth.auth().currentUser != nil {
             self.button.isHidden = true
             self.emailText.isHidden = true
             self.passwordText.isHidden = true
             self.label.isHidden = true
+            self.backToButton.isHidden = false
         }
     }
 

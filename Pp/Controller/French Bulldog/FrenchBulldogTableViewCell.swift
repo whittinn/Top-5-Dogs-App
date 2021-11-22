@@ -8,8 +8,8 @@
 import UIKit
 
 class FrenchBulldogTableViewCell: UITableViewCell {
-
- static let id = "cell123"
+    
+    static let id = "cell123"
     
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var imageData: UIImageView!
@@ -20,7 +20,7 @@ class FrenchBulldogTableViewCell: UITableViewCell {
         self.ratingLabel?.text = text
         
     }
-
+    
     func showDislikedText(_ text : String){
         self.ratingLabel?.text = text
     }

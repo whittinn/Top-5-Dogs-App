@@ -17,11 +17,6 @@ extension FrenchBulldogViewController : UITableViewDataSource {
         cell.downloadPictureFromURL(from: pictures[indexPath.row].previewURL)
         return cell
         
-    
     }
-    
-    
-    
-    
     
 }

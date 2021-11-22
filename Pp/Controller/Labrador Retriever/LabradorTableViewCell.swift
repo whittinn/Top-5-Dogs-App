@@ -8,8 +8,8 @@
 import UIKit
 
 class LabradorTableViewCell: UITableViewCell {
-
-   static let id = "cell123"
+    
+    static let id = "cell123"
     @IBOutlet weak var imageData: UIImageView!
     @IBOutlet weak var ratingLabel: UILabel!
     

@@ -18,7 +18,4 @@ struct Hit : Codable  {
     let downloads : Int
     let pageURL : String
     let likes : Int
-  
-    
-    
 }
