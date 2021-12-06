@@ -43,11 +43,6 @@ class GoldenRetrieverViewController : UIViewController {
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.destination is YesViewController {
-            let vc = segue.destination as? YesViewController
-            vc?.imageUrl = selectedPicture?.previewURL
-        }
-    }
+   
     
 }

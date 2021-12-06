@@ -18,16 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
-        let homeVC = SignInViewController.init(nibName: "HomeVC", bundle: nil)
+       
 
-              // Allocate navigation controller
-              self.navigationController =
-                UINavigationController(rootViewController: homeVC)
-                      return true
-
-             // Custom navigation View Assign window root view controller.
-              self.window?.rootViewController = self.navigationController
-              self.window?.makeKeyAndVisible()
+           
+            
     
         return true
     }

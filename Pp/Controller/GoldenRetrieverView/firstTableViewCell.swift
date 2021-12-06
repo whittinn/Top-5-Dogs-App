@@ -35,7 +35,7 @@ class firstTableViewCell: UITableViewCell {
     @IBAction func noButtonTapped(_ sender: Any) {
         
         self.showDislikedText("I dont like this picture.")
-        yesButton.isEnabled = true
+       
     }
 
     

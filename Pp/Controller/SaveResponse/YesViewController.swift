@@ -10,10 +10,11 @@ import UIKit
 class YesViewController: UIViewController {
     
     
-    var pictures2 : [Response]?
-    var imageUrl : String?
+    var disables : firstTableViewCell!
     
     let userDefaults = UserDefaults()
+    
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageData: UIImageView!
     @IBOutlet weak var responseLabel: UILabel!
@@ -40,6 +41,8 @@ class YesViewController: UIViewController {
         
     }
     
+  
+   
     @IBAction func saveButtonTapped(_ sender: Any) {
         let description = responseText.text
         userDefaults.setValue(description, forKey: "response")
